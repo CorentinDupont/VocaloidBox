@@ -9,11 +9,21 @@
 /* Begin PBXBuildFile section */
 		CF080003225B29110005BB0A /* VocaloidBoxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF080002225B29110005BB0A /* VocaloidBoxTests.swift */; };
 		CF08000E225B29120005BB0A /* VocaloidBoxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF08000D225B29120005BB0A /* VocaloidBoxUITests.swift */; };
+		CF08001C225B33090005BB0A /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF08001B225B33090005BB0A /* Album.swift */; };
+		CF08001E225B44210005BB0A /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF08001D225B44210005BB0A /* Music.swift */; };
+		CF080022225B459C0005BB0A /* AlbumTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF080021225B459C0005BB0A /* AlbumTableViewCell.swift */; };
+		CF080024225B45C80005BB0A /* AlbumTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF080023225B45C80005BB0A /* AlbumTableViewController.swift */; };
+		CF080028225B91510005BB0A /* URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF080027225B91510005BB0A /* URLSession.swift */; };
+		CF08002A225B93660005BB0A /* AlbumsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF080029225B93660005BB0A /* AlbumsResponse.swift */; };
+		CF08002C225B95320005BB0A /* AlbumAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF08002B225B95320005BB0A /* AlbumAPI.swift */; };
+		CF08002E225B969D0005BB0A /* ReleaseDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF08002D225B969D0005BB0A /* ReleaseDate.swift */; };
+		CF080030225B98240005BB0A /* AlbumServiceAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF08002F225B98240005BB0A /* AlbumServiceAPI.swift */; };
 		CF08FFEE225B29100005BB0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF08FFED225B29100005BB0A /* AppDelegate.swift */; };
 		CF08FFF0225B29100005BB0A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF08FFEF225B29100005BB0A /* ViewController.swift */; };
 		CF08FFF3225B29100005BB0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF08FFF1225B29100005BB0A /* Main.storyboard */; };
 		CF08FFF5225B29110005BB0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF08FFF4225B29110005BB0A /* Assets.xcassets */; };
 		CF08FFF8225B29110005BB0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF08FFF6225B29110005BB0A /* LaunchScreen.storyboard */; };
+		CF27B61D22817A4200EF9B06 /* MusicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF27B61C22817A4200EF9B06 /* MusicTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +49,15 @@
 		CF080009225B29120005BB0A /* VocaloidBoxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VocaloidBoxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF08000D225B29120005BB0A /* VocaloidBoxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocaloidBoxUITests.swift; sourceTree = "<group>"; };
 		CF08000F225B29120005BB0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF08001B225B33090005BB0A /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		CF08001D225B44210005BB0A /* Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
+		CF080021225B459C0005BB0A /* AlbumTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumTableViewCell.swift; sourceTree = "<group>"; };
+		CF080023225B45C80005BB0A /* AlbumTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumTableViewController.swift; sourceTree = "<group>"; };
+		CF080027225B91510005BB0A /* URLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSession.swift; sourceTree = "<group>"; };
+		CF080029225B93660005BB0A /* AlbumsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsResponse.swift; sourceTree = "<group>"; };
+		CF08002B225B95320005BB0A /* AlbumAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumAPI.swift; sourceTree = "<group>"; };
+		CF08002D225B969D0005BB0A /* ReleaseDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReleaseDate.swift; sourceTree = "<group>"; };
+		CF08002F225B98240005BB0A /* AlbumServiceAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumServiceAPI.swift; sourceTree = "<group>"; };
 		CF08FFEA225B29100005BB0A /* VocaloidBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VocaloidBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF08FFED225B29100005BB0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF08FFEF225B29100005BB0A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +66,7 @@
 		CF08FFF7225B29110005BB0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CF08FFF9225B29110005BB0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF08FFFE225B29110005BB0A /* VocaloidBoxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VocaloidBoxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF27B61C22817A4200EF9B06 /* MusicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,12 +135,22 @@
 		CF08FFEC225B29100005BB0A /* VocaloidBox */ = {
 			isa = PBXGroup;
 			children = (
+				CF080023225B45C80005BB0A /* AlbumTableViewController.swift */,
 				CF08FFED225B29100005BB0A /* AppDelegate.swift */,
 				CF08FFEF225B29100005BB0A /* ViewController.swift */,
 				CF08FFF1225B29100005BB0A /* Main.storyboard */,
+				CF080027225B91510005BB0A /* URLSession.swift */,
+				CF080029225B93660005BB0A /* AlbumsResponse.swift */,
+				CF080021225B459C0005BB0A /* AlbumTableViewCell.swift */,
+				CF08001B225B33090005BB0A /* Album.swift */,
+				CF08002B225B95320005BB0A /* AlbumAPI.swift */,
+				CF08002F225B98240005BB0A /* AlbumServiceAPI.swift */,
+				CF08002D225B969D0005BB0A /* ReleaseDate.swift */,
+				CF08001D225B44210005BB0A /* Music.swift */,
 				CF08FFF4225B29110005BB0A /* Assets.xcassets */,
 				CF08FFF6225B29110005BB0A /* LaunchScreen.storyboard */,
 				CF08FFF9225B29110005BB0A /* Info.plist */,
+				CF27B61C22817A4200EF9B06 /* MusicTableViewCell.swift */,
 			);
 			path = VocaloidBox;
 			sourceTree = "<group>";
@@ -264,8 +294,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF080030225B98240005BB0A /* AlbumServiceAPI.swift in Sources */,
 				CF08FFF0225B29100005BB0A /* ViewController.swift in Sources */,
+				CF08002E225B969D0005BB0A /* ReleaseDate.swift in Sources */,
+				CF08002C225B95320005BB0A /* AlbumAPI.swift in Sources */,
+				CF080028225B91510005BB0A /* URLSession.swift in Sources */,
+				CF08002A225B93660005BB0A /* AlbumsResponse.swift in Sources */,
+				CF080024225B45C80005BB0A /* AlbumTableViewController.swift in Sources */,
 				CF08FFEE225B29100005BB0A /* AppDelegate.swift in Sources */,
+				CF08001C225B33090005BB0A /* Album.swift in Sources */,
+				CF08001E225B44210005BB0A /* Music.swift in Sources */,
+				CF080022225B459C0005BB0A /* AlbumTableViewCell.swift in Sources */,
+				CF27B61D22817A4200EF9B06 /* MusicTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
