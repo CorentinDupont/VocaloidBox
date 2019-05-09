@@ -20,6 +20,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     @IBOutlet weak var albumImage: UIImageView!
     @IBOutlet weak var musicTableView: UITableView!
     
+    
     /*
      This value is either passed by `AlbumTableViewController` in `prepare(for:sender:)`
      or constructed as part of adding a new album.
@@ -35,13 +36,54 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             authorLabel.text = album.author
             albumImage.image = album.image
             navigationItem.title = album.title
+            
+            // check if this album is already in favorite
+            checkIsFavorite(album)
         }
+        
+        
         
         // load sample musics
 //        loadSampleMusics()
         
         // load album musics
         loadAlbumMusics()
+    }
+    
+    
+    
+    // MARK - Actions
+    
+    @IBAction func addToFavorite(_ sender: UIBarButtonItem) {
+        
+        // First, get all albums from the local storage
+        var albumsToSave: [Album]? = Album.loadAlbums()
+        
+        // Add the new one
+        if (albumsToSave?.append(album!)) == nil {
+            albumsToSave = [album!]
+        }
+        
+        // Save the new array
+        Album.saveAlbums(albums: albumsToSave!)
+        
+        switchFavButtonFunc(true)
+    }
+    
+    @IBAction func removeFromFavorite(_ sender: UIBarButtonItem) {
+        print("[ViewController] - remove from favorite ...")
+        
+        // First, get all albums from the local storage
+        var albumsToSave: [Album]? = Album.loadAlbums()
+        
+        // remove the concerned album
+        if let index = albumsToSave?.firstIndex(where: { $0.title == album?.title}) {
+            albumsToSave!.remove(at: index)
+            Album.saveAlbums(albums: albumsToSave!)
+            
+            // Change favorite button state
+            switchFavButtonFunc(false)
+        }
     }
     
     // MARK - Table View Methods
@@ -65,6 +107,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         return cell
     }
     
+    
+    
     // MARK - private functions
 
     private func loadSampleMusics() {
@@ -82,8 +126,28 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         musics = album?.musics ?? [Music]()
     }
 
+    private func checkIsFavorite(_ album: Album) {
+        let loadedAlbums = Album.loadAlbums()
+        print("[ViewController] - Check if this is a favorite album")
+        
+        if let _ = loadedAlbums?.firstIndex(where: { $0.title == album.title}) {
+            switchFavButtonFunc(true)
+        }
+    }
     
-    
+    private func switchFavButtonFunc(_ isFavorite: Bool) {
+        if isFavorite {
+            print("[ViewController] - switch favorite mode to 'remove'")
+            self.navigationItem.rightBarButtonItem?.title = "Remove from favorite"
+            self.navigationItem.rightBarButtonItem?.tintColor = UIColor.red
+            self.navigationItem.rightBarButtonItem?.action = #selector(self.removeFromFavorite)
+        } else {
+            print("[ViewController] - switch favorite mode to 'add'")
+            self.navigationItem.rightBarButtonItem?.title = "Add to favorite"
+            self.navigationItem.rightBarButtonItem?.tintColor = UIColor.blue
+            self.navigationItem.rightBarButtonItem?.action = #selector(self.addToFavorite)
+        }
+    }
     
 }
 

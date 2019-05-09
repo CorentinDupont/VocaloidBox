@@ -7,12 +7,19 @@
 //
 
 import Foundation
+import os.log
 
-class Music{
+class Music : NSObject, NSCoding {
     
     // MARK: Properties
     
     var title: String
+    
+    // MARK: Types
+    
+    struct PropertyKey {
+        static let title = "title"
+    }
     
     // MARK: Initialization
     
@@ -24,5 +31,24 @@ class Music{
         }
         
         self.title = title
+    }
+    
+    // MARK: NSCoding
+    
+    // Encode
+    func encode(with aCoder: NSCoder) {
+        aCoder.encode(title, forKey: PropertyKey.title)
+    }
+    
+    // Decode
+    required convenience init?(coder aDecoder: NSCoder) {
+        // The name is required. If we cannot decode a name string, the initializer should fail.
+        guard let title = aDecoder.decodeObject(forKey: PropertyKey.title) as? String else {
+            os_log("Unable to decode the title for a Music object.", log: OSLog.default, type: .debug)
+            return nil
+        }
+        
+        // Must call designated initializer.
+        self.init(title: title)
     }
 }

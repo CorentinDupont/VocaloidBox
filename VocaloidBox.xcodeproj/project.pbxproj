@@ -24,6 +24,7 @@
 		CF08FFF5225B29110005BB0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF08FFF4225B29110005BB0A /* Assets.xcassets */; };
 		CF08FFF8225B29110005BB0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF08FFF6225B29110005BB0A /* LaunchScreen.storyboard */; };
 		CF27B61D22817A4200EF9B06 /* MusicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF27B61C22817A4200EF9B06 /* MusicTableViewCell.swift */; };
+		CF27B61F2283029E00EF9B06 /* FavoriteAlbumTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF27B61E2283029E00EF9B06 /* FavoriteAlbumTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		CF08FFF9225B29110005BB0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF08FFFE225B29110005BB0A /* VocaloidBoxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VocaloidBoxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF27B61C22817A4200EF9B06 /* MusicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTableViewCell.swift; sourceTree = "<group>"; };
+		CF27B61E2283029E00EF9B06 /* FavoriteAlbumTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteAlbumTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 				CF08FFED225B29100005BB0A /* AppDelegate.swift */,
 				CF08FFEF225B29100005BB0A /* ViewController.swift */,
 				CF08FFF1225B29100005BB0A /* Main.storyboard */,
+				CF27B61E2283029E00EF9B06 /* FavoriteAlbumTableViewController.swift */,
 				CF080027225B91510005BB0A /* URLSession.swift */,
 				CF080029225B93660005BB0A /* AlbumsResponse.swift */,
 				CF080021225B459C0005BB0A /* AlbumTableViewCell.swift */,
@@ -305,6 +308,7 @@
 				CF08001C225B33090005BB0A /* Album.swift in Sources */,
 				CF08001E225B44210005BB0A /* Music.swift in Sources */,
 				CF080022225B459C0005BB0A /* AlbumTableViewCell.swift in Sources */,
+				CF27B61F2283029E00EF9B06 /* FavoriteAlbumTableViewController.swift in Sources */,
 				CF27B61D22817A4200EF9B06 /* MusicTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
