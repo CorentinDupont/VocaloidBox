@@ -52,7 +52,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     
     
-    // MARK - Actions
+    // MARK: Actions
     
     @IBAction func addToFavorite(_ sender: UIBarButtonItem) {
         
@@ -86,7 +86,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         }
     }
     
-    // MARK - Table View Methods
+    // MARK: Table View Methods
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return musics.count
@@ -109,7 +109,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     
     
-    // MARK - private functions
+    // MARK: private functions
 
     private func loadSampleMusics() {
         

@@ -42,7 +42,7 @@ class AlbumServiceAPI {
         case decodeError
     }
     
-    private func fetchResources<T: Decodable>(from start: Int, url: URL, completion: @escaping (Result<T, APIServiceError>) -> Void) {
+    private func fetchResources<T: Decodable>(from start: Int, sortBy albumSort: AlbumSort, url: URL, completion: @escaping (Result<T, APIServiceError>) -> Void) {
         guard var urlComponents = URLComponents(url: url, resolvingAgainstBaseURL: true) else {
             completion(.failure(.invalidEndpoint))
             return
@@ -52,7 +52,8 @@ class AlbumServiceAPI {
         
         let queryItems = [
             URLQueryItem(name: "fields", value: "MainPicture, Tracks"),
-            URLQueryItem(name: "start", value: startString)
+            URLQueryItem(name: "start", value: startString),
+            URLQueryItem(name: "sort", value: albumSort.rawValue)
         ]
         urlComponents.queryItems = queryItems
         guard let url = urlComponents.url else {
@@ -83,9 +84,9 @@ class AlbumServiceAPI {
             }.resume()
     }
     
-    public func fetchAlbums(from start: Int, result: @escaping (Result<AlbumsResponse, APIServiceError>) -> Void) {
+    public func fetchAlbums(from start: Int, sortBy albumSort: AlbumSort, result: @escaping (Result<AlbumsResponse, APIServiceError>) -> Void) {
         let albumURL = baseURL
-        fetchResources(from: start, url: albumURL, completion: result)
+        fetchResources(from: start, sortBy: albumSort, url: albumURL, completion: result)
     }
     
     private init() {}

@@ -14,12 +14,15 @@ class AlbumTableViewController: UITableViewController {
     // MARK: Properties
     
     var albums = [Album]()
-    var desiredAlbumCount = 0;
-
+    var desiredAlbumCount = 0
+    var albumSort = AlbumSort.ReleaseDate
+    
+    @IBOutlet weak var segmentedControl: UISegmentedControl!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        loadAlbumsFromAPI(from: 0)
+        loadAlbumsFromAPI(from: 0, sortBy: albumSort)
         
         //load samples albums
 //        loadSampleAlbums()
@@ -106,7 +109,7 @@ class AlbumTableViewController: UITableViewController {
         print("[AlbumTableViewController] - Try to load more content ... ", albums.count, desiredAlbumCount, indexPath.row)
         if albums.count == desiredAlbumCount && indexPath.row == albums.count-1 {
             // load more albums
-            loadAlbumsFromAPI(from: albums.count)
+            loadAlbumsFromAPI(from: albums.count, sortBy: albumSort)
         }
     }
 
@@ -143,8 +146,25 @@ class AlbumTableViewController: UITableViewController {
                 fatalError("Unexpected Segue Identifier; \(String(describing: segue.identifier))")
         }
     }
- 
+    
+    // MARK: Actions
+    
+    // Respond to the segment control changement
+    @IBAction func segmentIndexChanged(_ sender: Any) {
+        switch segmentedControl.selectedSegmentIndex
+        {
+        case 0: // Newest
+            albumSort = AlbumSort.ReleaseDate
+        case 1: // Top Rated
+            albumSort = AlbumSort.RatingTotal
+        default:
+            break
+        }
+        
+        resetAndReloadAlbums()
+    }
 
+    
     //MARK: Private Methods
     
     private func loadSampleAlbums() {
@@ -166,14 +186,14 @@ class AlbumTableViewController: UITableViewController {
         
     }
     
-    private func loadAlbumsFromAPI(from start: Int) {
+    private func loadAlbumsFromAPI(from start: Int, sortBy albumSort: AlbumSort) {
         
         print("[AlbumTableViewController] - Load albums from API")
         
         desiredAlbumCount += 10
         
         // Call the API to get AlbumAPI objects
-        AlbumServiceAPI.shared.fetchAlbums(from: start) {
+        AlbumServiceAPI.shared.fetchAlbums(from: start, sortBy: albumSort) {
             (result: Result<AlbumsResponse, AlbumServiceAPI.APIServiceError>) in
             switch result {
             case .success(let albumResponse):
@@ -221,6 +241,15 @@ class AlbumTableViewController: UITableViewController {
                 print(error.localizedDescription)
             }
         }
+    }
+    
+    private func resetAndReloadAlbums() {
+        // reset params
+        self.desiredAlbumCount = 0
+        self.albums = [Album]()
+        
+        // load albums from API
+        loadAlbumsFromAPI(from: desiredAlbumCount, sortBy: albumSort)
     }
     
     

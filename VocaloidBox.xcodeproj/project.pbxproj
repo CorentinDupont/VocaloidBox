@@ -23,6 +23,7 @@
 		CF08FFF3225B29100005BB0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF08FFF1225B29100005BB0A /* Main.storyboard */; };
 		CF08FFF5225B29110005BB0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF08FFF4225B29110005BB0A /* Assets.xcassets */; };
 		CF08FFF8225B29110005BB0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF08FFF6225B29110005BB0A /* LaunchScreen.storyboard */; };
+		CF1D3904229D30ED004672AA /* AlbumSortEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1D3903229D30ED004672AA /* AlbumSortEnum.swift */; };
 		CF27B61D22817A4200EF9B06 /* MusicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF27B61C22817A4200EF9B06 /* MusicTableViewCell.swift */; };
 		CF27B61F2283029E00EF9B06 /* FavoriteAlbumTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF27B61E2283029E00EF9B06 /* FavoriteAlbumTableViewController.swift */; };
 /* End PBXBuildFile section */
@@ -67,6 +68,7 @@
 		CF08FFF7225B29110005BB0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CF08FFF9225B29110005BB0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF08FFFE225B29110005BB0A /* VocaloidBoxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VocaloidBoxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF1D3903229D30ED004672AA /* AlbumSortEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumSortEnum.swift; sourceTree = "<group>"; };
 		CF27B61C22817A4200EF9B06 /* MusicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTableViewCell.swift; sourceTree = "<group>"; };
 		CF27B61E2283029E00EF9B06 /* FavoriteAlbumTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteAlbumTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -117,6 +119,7 @@
 		CF08FFE1225B29100005BB0A = {
 			isa = PBXGroup;
 			children = (
+				CF1D3903229D30ED004672AA /* AlbumSortEnum.swift */,
 				CF08FFEC225B29100005BB0A /* VocaloidBox */,
 				CF080001225B29110005BB0A /* VocaloidBoxTests */,
 				CF08000C225B29120005BB0A /* VocaloidBoxUITests */,
@@ -297,6 +300,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF1D3904229D30ED004672AA /* AlbumSortEnum.swift in Sources */,
 				CF080030225B98240005BB0A /* AlbumServiceAPI.swift in Sources */,
 				CF08FFF0225B29100005BB0A /* ViewController.swift in Sources */,
 				CF08002E225B969D0005BB0A /* ReleaseDate.swift in Sources */,
