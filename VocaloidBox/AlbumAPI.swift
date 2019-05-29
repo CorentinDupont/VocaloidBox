@@ -92,3 +92,37 @@ struct SongAPI: Codable {
     let status: String
     let version: Int
 }
+
+struct DetailedSongAPI: Codable {
+    let artistString: String
+    let createDate: String
+    let defaultName: String
+    let defaultNameLanguage: String
+    let favoritedTimes: Int
+    let id: Int
+    let lengthSeconds: Int
+    let name: String
+    let publishDate: String?
+    let pvs: [PVAPI]
+    let pvServices: String
+    let ratingScore: Int
+    let songType: String
+    let status: String
+    let version: Int
+}
+
+struct PVAPI: Codable {
+    let author: String
+    let disabled: Bool
+    let id: Int
+    let length: Int
+    let name: String
+    let publishDate: String?
+    let pvId: String
+    let service: String
+    let pvType: String
+    let thumbUrl: String
+    let url: String
+}
+
+

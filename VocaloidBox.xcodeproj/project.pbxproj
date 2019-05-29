@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A7335E5A5A2492AC4D8F9F5 /* Pods_VocaloidBoxTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE9683E1860058199987FDDC /* Pods_VocaloidBoxTests.framework */; };
+		5E47920954B384A992CBFD6F /* Pods_VocaloidBoxUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6F66F0B8ACBBF3FC1528F4F /* Pods_VocaloidBoxUITests.framework */; };
+		C3A76B88452665F04758EDC5 /* Pods_VocaloidBox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FABB7A3A3CF661C3AF85694D /* Pods_VocaloidBox.framework */; };
 		CF080003225B29110005BB0A /* VocaloidBoxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF080002225B29110005BB0A /* VocaloidBoxTests.swift */; };
 		CF08000E225B29120005BB0A /* VocaloidBoxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF08000D225B29120005BB0A /* VocaloidBoxUITests.swift */; };
 		CF08001C225B33090005BB0A /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF08001B225B33090005BB0A /* Album.swift */; };
@@ -26,6 +29,7 @@
 		CF1D3904229D30ED004672AA /* AlbumSortEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1D3903229D30ED004672AA /* AlbumSortEnum.swift */; };
 		CF27B61D22817A4200EF9B06 /* MusicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF27B61C22817A4200EF9B06 /* MusicTableViewCell.swift */; };
 		CF27B61F2283029E00EF9B06 /* FavoriteAlbumTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF27B61E2283029E00EF9B06 /* FavoriteAlbumTableViewController.swift */; };
+		CF6C3A5D229D7C2800C7B632 /* MusicServiceAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6C3A5C229D7C2800C7B632 /* MusicServiceAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +50,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0631106BC392FC4B69285937 /* Pods-VocaloidBox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VocaloidBox.release.xcconfig"; path = "Target Support Files/Pods-VocaloidBox/Pods-VocaloidBox.release.xcconfig"; sourceTree = "<group>"; };
+		46174C0EFC812D637E2AD6C4 /* Pods-VocaloidBoxUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VocaloidBoxUITests.debug.xcconfig"; path = "Target Support Files/Pods-VocaloidBoxUITests/Pods-VocaloidBoxUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		52DEE4CDCC4365E5B9C0D4EC /* Pods-VocaloidBoxTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VocaloidBoxTests.debug.xcconfig"; path = "Target Support Files/Pods-VocaloidBoxTests/Pods-VocaloidBoxTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6B62D6160477093F1A9A8F90 /* Pods-VocaloidBox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VocaloidBox.debug.xcconfig"; path = "Target Support Files/Pods-VocaloidBox/Pods-VocaloidBox.debug.xcconfig"; sourceTree = "<group>"; };
+		70D3F814FCD10063F0F75082 /* Pods-VocaloidBoxTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VocaloidBoxTests.release.xcconfig"; path = "Target Support Files/Pods-VocaloidBoxTests/Pods-VocaloidBoxTests.release.xcconfig"; sourceTree = "<group>"; };
 		CF080002225B29110005BB0A /* VocaloidBoxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocaloidBoxTests.swift; sourceTree = "<group>"; };
 		CF080004225B29110005BB0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF080009225B29120005BB0A /* VocaloidBoxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VocaloidBoxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,6 +80,11 @@
 		CF1D3903229D30ED004672AA /* AlbumSortEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumSortEnum.swift; sourceTree = "<group>"; };
 		CF27B61C22817A4200EF9B06 /* MusicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTableViewCell.swift; sourceTree = "<group>"; };
 		CF27B61E2283029E00EF9B06 /* FavoriteAlbumTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteAlbumTableViewController.swift; sourceTree = "<group>"; };
+		CF6C3A5C229D7C2800C7B632 /* MusicServiceAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicServiceAPI.swift; sourceTree = "<group>"; };
+		EE9683E1860058199987FDDC /* Pods_VocaloidBoxTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VocaloidBoxTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6F66F0B8ACBBF3FC1528F4F /* Pods_VocaloidBoxUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VocaloidBoxUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FABB7A3A3CF661C3AF85694D /* Pods_VocaloidBox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VocaloidBox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDE3C732AAD47543F50001F1 /* Pods-VocaloidBoxUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VocaloidBoxUITests.release.xcconfig"; path = "Target Support Files/Pods-VocaloidBoxUITests/Pods-VocaloidBoxUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E47920954B384A992CBFD6F /* Pods_VocaloidBoxUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3A76B88452665F04758EDC5 /* Pods_VocaloidBox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,12 +108,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A7335E5A5A2492AC4D8F9F5 /* Pods_VocaloidBoxTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8ACBC31DB60453C16E033AF1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FABB7A3A3CF661C3AF85694D /* Pods_VocaloidBox.framework */,
+				EE9683E1860058199987FDDC /* Pods_VocaloidBoxTests.framework */,
+				F6F66F0B8ACBBF3FC1528F4F /* Pods_VocaloidBoxUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9B524DF9A1043C68B5BD25C8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6B62D6160477093F1A9A8F90 /* Pods-VocaloidBox.debug.xcconfig */,
+				0631106BC392FC4B69285937 /* Pods-VocaloidBox.release.xcconfig */,
+				52DEE4CDCC4365E5B9C0D4EC /* Pods-VocaloidBoxTests.debug.xcconfig */,
+				70D3F814FCD10063F0F75082 /* Pods-VocaloidBoxTests.release.xcconfig */,
+				46174C0EFC812D637E2AD6C4 /* Pods-VocaloidBoxUITests.debug.xcconfig */,
+				FDE3C732AAD47543F50001F1 /* Pods-VocaloidBoxUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CF080001225B29110005BB0A /* VocaloidBoxTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +164,8 @@
 				CF080001225B29110005BB0A /* VocaloidBoxTests */,
 				CF08000C225B29120005BB0A /* VocaloidBoxUITests */,
 				CF08FFEB225B29100005BB0A /* Products */,
+				9B524DF9A1043C68B5BD25C8 /* Pods */,
+				8ACBC31DB60453C16E033AF1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -151,6 +193,7 @@
 				CF08001B225B33090005BB0A /* Album.swift */,
 				CF08002B225B95320005BB0A /* AlbumAPI.swift */,
 				CF08002F225B98240005BB0A /* AlbumServiceAPI.swift */,
+				CF6C3A5C229D7C2800C7B632 /* MusicServiceAPI.swift */,
 				CF08002D225B969D0005BB0A /* ReleaseDate.swift */,
 				CF08001D225B44210005BB0A /* Music.swift */,
 				CF08FFF4225B29110005BB0A /* Assets.xcassets */,
@@ -168,6 +211,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CF080018225B29120005BB0A /* Build configuration list for PBXNativeTarget "VocaloidBoxUITests" */;
 			buildPhases = (
+				76E79371120B1DA740B7AB36 /* [CP] Check Pods Manifest.lock */,
 				CF080005225B29120005BB0A /* Sources */,
 				CF080006225B29120005BB0A /* Frameworks */,
 				CF080007225B29120005BB0A /* Resources */,
@@ -186,9 +230,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CF080012225B29120005BB0A /* Build configuration list for PBXNativeTarget "VocaloidBox" */;
 			buildPhases = (
+				B18A8C28A0422346C2771EC1 /* [CP] Check Pods Manifest.lock */,
 				CF08FFE6225B29100005BB0A /* Sources */,
 				CF08FFE7225B29100005BB0A /* Frameworks */,
 				CF08FFE8225B29100005BB0A /* Resources */,
+				B0B37524A3D7E56313B05026 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -203,6 +249,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CF080015225B29120005BB0A /* Build configuration list for PBXNativeTarget "VocaloidBoxTests" */;
 			buildPhases = (
+				4BCD7A05B51F7B556BAFCFD2 /* [CP] Check Pods Manifest.lock */,
 				CF08FFFA225B29110005BB0A /* Sources */,
 				CF08FFFB225B29110005BB0A /* Frameworks */,
 				CF08FFFC225B29110005BB0A /* Resources */,
@@ -287,6 +334,97 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4BCD7A05B51F7B556BAFCFD2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VocaloidBoxTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		76E79371120B1DA740B7AB36 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VocaloidBoxUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0B37524A3D7E56313B05026 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VocaloidBox/Pods-VocaloidBox-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/YoutubePlayer-in-WKWebView/YoutubePlayer_in_WKWebView.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YoutubePlayer_in_WKWebView.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VocaloidBox/Pods-VocaloidBox-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B18A8C28A0422346C2771EC1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VocaloidBox-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CF080005225B29120005BB0A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -312,6 +450,7 @@
 				CF08001C225B33090005BB0A /* Album.swift in Sources */,
 				CF08001E225B44210005BB0A /* Music.swift in Sources */,
 				CF080022225B459C0005BB0A /* AlbumTableViewCell.swift in Sources */,
+				CF6C3A5D229D7C2800C7B632 /* MusicServiceAPI.swift in Sources */,
 				CF27B61F2283029E00EF9B06 /* FavoriteAlbumTableViewController.swift in Sources */,
 				CF27B61D22817A4200EF9B06 /* MusicTableViewCell.swift in Sources */,
 			);
@@ -478,6 +617,7 @@
 		};
 		CF080013225B29120005BB0A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B62D6160477093F1A9A8F90 /* Pods-VocaloidBox.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -496,6 +636,7 @@
 		};
 		CF080014225B29120005BB0A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0631106BC392FC4B69285937 /* Pods-VocaloidBox.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -514,6 +655,7 @@
 		};
 		CF080016225B29120005BB0A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52DEE4CDCC4365E5B9C0D4EC /* Pods-VocaloidBoxTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -535,6 +677,7 @@
 		};
 		CF080017225B29120005BB0A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70D3F814FCD10063F0F75082 /* Pods-VocaloidBoxTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -556,6 +699,7 @@
 		};
 		CF080019225B29120005BB0A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46174C0EFC812D637E2AD6C4 /* Pods-VocaloidBoxUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -576,6 +720,7 @@
 		};
 		CF08001A225B29120005BB0A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDE3C732AAD47543F50001F1 /* Pods-VocaloidBoxUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

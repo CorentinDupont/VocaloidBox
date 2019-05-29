@@ -19,13 +19,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JtN-yw-4MV">
-                                <rect key="frame" x="37" y="72" width="301" height="301"/>
+                                <rect key="frame" x="12" y="76" width="64" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="JtN-yw-4MV" secondAttribute="height" multiplier="1:1" id="KiJ-RT-4pF"/>
+                                    <constraint firstAttribute="width" constant="64" id="NmX-Uz-z57"/>
+                                    <constraint firstAttribute="height" constant="64" id="tvk-6r-rSa"/>
                                 </constraints>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0GV-bX-qfd">
-                                <rect key="frame" x="0.0" y="447" width="375" height="171"/>
+                                <rect key="frame" x="0.0" y="370" width="375" height="248"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MusicTableViewCell" id="S3k-Jx-FWp" customClass="MusicTableViewCell" customModule="VocaloidBox">
@@ -58,31 +60,40 @@
                                 </connections>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Musics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mGl-58-sfF">
-                                <rect key="frame" x="16" y="418" width="57" height="21"/>
+                                <rect key="frame" x="16" y="341" width="57" height="21"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hdP-p9-YHC">
-                                <rect key="frame" x="166.5" y="381" width="42" height="21"/>
+                                <rect key="frame" x="84" y="76" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hge-2b-1Hj" customClass="WKYTPlayerView">
+                                <rect key="frame" x="0.0" y="148" width="375" height="185"/>
+                                <color key="backgroundColor" red="0.66754311617915185" green="0.95490608808290156" blue="0.91034347918165459" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="hge-2b-1Hj" secondAttribute="height" multiplier="75:37" id="sEU-el-UcM"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="hdP-p9-YHC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1FA-XI-yXg"/>
+                            <constraint firstItem="mGl-58-sfF" firstAttribute="top" secondItem="hge-2b-1Hj" secondAttribute="bottom" constant="8" id="0vE-Ye-qta"/>
+                            <constraint firstItem="hge-2b-1Hj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3El-vp-2XK"/>
+                            <constraint firstItem="hge-2b-1Hj" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="HVK-gb-iwi"/>
                             <constraint firstItem="mGl-58-sfF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="KBd-iv-bC4"/>
-                            <constraint firstItem="JtN-yw-4MV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="37" id="Zau-oQ-HNz"/>
-                            <constraint firstItem="hdP-p9-YHC" firstAttribute="top" secondItem="JtN-yw-4MV" secondAttribute="bottom" constant="8" id="hAc-sq-ak6"/>
-                            <constraint firstItem="JtN-yw-4MV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="i7e-ze-Hw2"/>
+                            <constraint firstItem="JtN-yw-4MV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="Qpo-ef-n3c"/>
+                            <constraint firstItem="hdP-p9-YHC" firstAttribute="leading" secondItem="JtN-yw-4MV" secondAttribute="trailing" constant="8" id="ZcU-8b-W1g"/>
+                            <constraint firstItem="hge-2b-1Hj" firstAttribute="top" secondItem="JtN-yw-4MV" secondAttribute="bottom" constant="8" id="bI2-8n-nhd"/>
+                            <constraint firstItem="JtN-yw-4MV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="gps-FS-wa5"/>
                             <constraint firstItem="0GV-bX-qfd" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="o5i-f0-u8e"/>
+                            <constraint firstItem="hdP-p9-YHC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="pMq-Wk-gHw"/>
                             <constraint firstItem="0GV-bX-qfd" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="pQM-rD-Ci5"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JtN-yw-4MV" secondAttribute="trailing" constant="37" id="ptf-TQ-LXQ"/>
                             <constraint firstItem="0GV-bX-qfd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="q4n-Gm-fp3"/>
-                            <constraint firstItem="mGl-58-sfF" firstAttribute="top" secondItem="hdP-p9-YHC" secondAttribute="bottom" constant="16" id="uWj-rg-rrJ"/>
-                            <constraint firstItem="0GV-bX-qfd" firstAttribute="top" secondItem="mGl-58-sfF" secondAttribute="bottom" constant="8" id="xLJ-6H-WX5"/>
+                            <constraint firstItem="0GV-bX-qfd" firstAttribute="top" secondItem="mGl-58-sfF" secondAttribute="bottom" constant="8" id="woU-Ev-Ik6"/>
                             <constraint firstItem="0GV-bX-qfd" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ydi-lJ-naQ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -98,6 +109,8 @@
                         <outlet property="albumImage" destination="JtN-yw-4MV" id="JvS-2O-uR6"/>
                         <outlet property="authorLabel" destination="hdP-p9-YHC" id="26r-SJ-RRR"/>
                         <outlet property="musicTableView" destination="0GV-bX-qfd" id="RS2-Uj-ahl"/>
+                        <outlet property="playerView" destination="hge-2b-1Hj" id="wVb-Wl-MTy"/>
+                        <outlet property="tableView" destination="0GV-bX-qfd" id="oyz-kG-Daf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

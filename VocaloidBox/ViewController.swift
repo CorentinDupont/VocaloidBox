@@ -8,6 +8,7 @@
 
 import UIKit
 import os.log
+import YoutubePlayer_in_WKWebView
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
@@ -19,6 +20,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     @IBOutlet weak var authorLabel: UILabel!
     @IBOutlet weak var albumImage: UIImageView!
     @IBOutlet weak var musicTableView: UITableView!
+    @IBOutlet weak var playerView: WKYTPlayerView!
+    @IBOutlet weak var tableView: UITableView!
     
     
     /*
@@ -30,6 +33,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
         
         //set up fields if there is an existing album
         if let album = album {
@@ -107,14 +114,56 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         return cell
     }
     
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        //let cell = tableView.dequeueReusableCell(withIdentifier: "MovieTableViewCell", for: indexPath) as! MusicTableViewCell
+        
+        print("[ViewController] - click on cell")
+        
+        loadSong(withId: musics[indexPath.row].id)
+    }
     
     
     // MARK: private functions
+    
+    private func loadSong(withId id: Int) {
+        MusicServiceAPI.shared.findOne(byId: id, result: {
+            (result: Result<DetailedSongAPI, MusicServiceAPI.APIServiceError>) in
+            switch result {
+                
+            case .success(let detailedSongAPI):
+                print("[AlbumTableViewController] - Received song from API !")
+                
+                if detailedSongAPI.pvServices.contains("Youtube") {
+                    var pvId: String?
+                    let searchValue = "Youtube"
+                    
+                    for pv in detailedSongAPI.pvs {
+                        if pv.service == searchValue {
+                            pvId = pv.pvId
+                            break;
+                            
+                        }
+                    }
+                    
+                    // Refresh the list
+                    DispatchQueue.main.async {
+                        print("[ViewController] - End Displaying PV ")
+                        if pvId != nil { self.playerView.load(withVideoId: pvId!) }
+                    }
+                    
+                    
+                }
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        })
+    }
 
     private func loadSampleMusics() {
         
-        for _ in 1...3 {
-            guard let music = Music(title: "music name") else {
+        for i in 1...3 {
+            guard let music = Music(id: i, title: "music name") else {
                 fatalError("Can't create sample music")
             }
             musics += [music]

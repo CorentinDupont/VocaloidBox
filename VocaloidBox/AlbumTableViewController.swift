@@ -38,7 +38,7 @@ class AlbumTableViewController: UITableViewController {
     }
 
     // MARK: - Table view data source
-
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -215,7 +215,7 @@ class AlbumTableViewController: UITableViewController {
                     var albumMusics = [Music]()
                     
                     for track in albumAPI.tracks {
-                        guard let music = Music(title: track.name) else {
+                        guard let music = Music(id: track.id, title: track.name) else {
                             fatalError("Unable to instantiate music " + track.name)
                         }
                         albumMusics += [music]
