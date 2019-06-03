@@ -26,10 +26,20 @@
 		CF08FFF3225B29100005BB0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF08FFF1225B29100005BB0A /* Main.storyboard */; };
 		CF08FFF5225B29110005BB0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF08FFF4225B29110005BB0A /* Assets.xcassets */; };
 		CF08FFF8225B29110005BB0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF08FFF6225B29110005BB0A /* LaunchScreen.storyboard */; };
+		CF1B935A22A503CD0071DB5C /* ImportedAlbumsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1B935922A503CD0071DB5C /* ImportedAlbumsViewController.swift */; };
+		CF1B935C22A5043E0071DB5C /* ImportNewAlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1B935B22A5043E0071DB5C /* ImportNewAlbumViewController.swift */; };
 		CF1D3904229D30ED004672AA /* AlbumSortEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1D3903229D30ED004672AA /* AlbumSortEnum.swift */; };
 		CF27B61D22817A4200EF9B06 /* MusicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF27B61C22817A4200EF9B06 /* MusicTableViewCell.swift */; };
 		CF27B61F2283029E00EF9B06 /* FavoriteAlbumTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF27B61E2283029E00EF9B06 /* FavoriteAlbumTableViewController.swift */; };
 		CF6C3A5D229D7C2800C7B632 /* MusicServiceAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6C3A5C229D7C2800C7B632 /* MusicServiceAPI.swift */; };
+		CFB2071322A52781001A056D /* ImportedMusicTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB2071222A52781001A056D /* ImportedMusicTableViewController.swift */; };
+		CFB2071522A52824001A056D /* ImportedMusicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB2071422A52824001A056D /* ImportedMusicTableViewCell.swift */; };
+		CFB2071722A52862001A056D /* ImportedMusic.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB2071622A52862001A056D /* ImportedMusic.swift */; };
+		CFB2071922A53ABE001A056D /* ImportedAlbum.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB2071822A53ABE001A056D /* ImportedAlbum.swift */; };
+		CFB2071B22A5465D001A056D /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFB2071A22A5465D001A056D /* MediaPlayer.framework */; };
+		CFB2071D22A566F8001A056D /* mantastorm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CFB2071C22A566F7001A056D /* mantastorm.mp3 */; };
+		CFB2071F22A5688D001A056D /* mantastorm.wav in Resources */ = {isa = PBXBuildFile; fileRef = CFB2071E22A5688C001A056D /* mantastorm.wav */; };
+		CFB2072122A56BAB001A056D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFB2072022A56BAB001A056D /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,10 +87,20 @@
 		CF08FFF7225B29110005BB0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CF08FFF9225B29110005BB0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF08FFFE225B29110005BB0A /* VocaloidBoxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VocaloidBoxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF1B935922A503CD0071DB5C /* ImportedAlbumsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportedAlbumsViewController.swift; sourceTree = "<group>"; };
+		CF1B935B22A5043E0071DB5C /* ImportNewAlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportNewAlbumViewController.swift; sourceTree = "<group>"; };
 		CF1D3903229D30ED004672AA /* AlbumSortEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumSortEnum.swift; sourceTree = "<group>"; };
 		CF27B61C22817A4200EF9B06 /* MusicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTableViewCell.swift; sourceTree = "<group>"; };
 		CF27B61E2283029E00EF9B06 /* FavoriteAlbumTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteAlbumTableViewController.swift; sourceTree = "<group>"; };
 		CF6C3A5C229D7C2800C7B632 /* MusicServiceAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicServiceAPI.swift; sourceTree = "<group>"; };
+		CFB2071222A52781001A056D /* ImportedMusicTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportedMusicTableViewController.swift; sourceTree = "<group>"; };
+		CFB2071422A52824001A056D /* ImportedMusicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportedMusicTableViewCell.swift; sourceTree = "<group>"; };
+		CFB2071622A52862001A056D /* ImportedMusic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportedMusic.swift; sourceTree = "<group>"; };
+		CFB2071822A53ABE001A056D /* ImportedAlbum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportedAlbum.swift; sourceTree = "<group>"; };
+		CFB2071A22A5465D001A056D /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		CFB2071C22A566F7001A056D /* mantastorm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = mantastorm.mp3; path = ../../../../Downloads/mantastorm.mp3; sourceTree = "<group>"; };
+		CFB2071E22A5688C001A056D /* mantastorm.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = mantastorm.wav; path = ../../../../Downloads/mantastorm.wav; sourceTree = "<group>"; };
+		CFB2072022A56BAB001A056D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		EE9683E1860058199987FDDC /* Pods_VocaloidBoxTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VocaloidBoxTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6F66F0B8ACBBF3FC1528F4F /* Pods_VocaloidBoxUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VocaloidBoxUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FABB7A3A3CF661C3AF85694D /* Pods_VocaloidBox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VocaloidBox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,6 +120,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFB2072122A56BAB001A056D /* AVFoundation.framework in Frameworks */,
+				CFB2071B22A5465D001A056D /* MediaPlayer.framework in Frameworks */,
 				C3A76B88452665F04758EDC5 /* Pods_VocaloidBox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -118,6 +140,8 @@
 		8ACBC31DB60453C16E033AF1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CFB2072022A56BAB001A056D /* AVFoundation.framework */,
+				CFB2071A22A5465D001A056D /* MediaPlayer.framework */,
 				FABB7A3A3CF661C3AF85694D /* Pods_VocaloidBox.framework */,
 				EE9683E1860058199987FDDC /* Pods_VocaloidBoxTests.framework */,
 				F6F66F0B8ACBBF3FC1528F4F /* Pods_VocaloidBoxUITests.framework */,
@@ -182,10 +206,16 @@
 		CF08FFEC225B29100005BB0A /* VocaloidBox */ = {
 			isa = PBXGroup;
 			children = (
+				CFB2071E22A5688C001A056D /* mantastorm.wav */,
+				CFB2071C22A566F7001A056D /* mantastorm.mp3 */,
 				CF080023225B45C80005BB0A /* AlbumTableViewController.swift */,
 				CF08FFED225B29100005BB0A /* AppDelegate.swift */,
 				CF08FFEF225B29100005BB0A /* ViewController.swift */,
 				CF08FFF1225B29100005BB0A /* Main.storyboard */,
+				CFB2071222A52781001A056D /* ImportedMusicTableViewController.swift */,
+				CFB2071422A52824001A056D /* ImportedMusicTableViewCell.swift */,
+				CF1B935B22A5043E0071DB5C /* ImportNewAlbumViewController.swift */,
+				CF1B935922A503CD0071DB5C /* ImportedAlbumsViewController.swift */,
 				CF27B61E2283029E00EF9B06 /* FavoriteAlbumTableViewController.swift */,
 				CF080027225B91510005BB0A /* URLSession.swift */,
 				CF080029225B93660005BB0A /* AlbumsResponse.swift */,
@@ -200,6 +230,8 @@
 				CF08FFF6225B29110005BB0A /* LaunchScreen.storyboard */,
 				CF08FFF9225B29110005BB0A /* Info.plist */,
 				CF27B61C22817A4200EF9B06 /* MusicTableViewCell.swift */,
+				CFB2071622A52862001A056D /* ImportedMusic.swift */,
+				CFB2071822A53ABE001A056D /* ImportedAlbum.swift */,
 			);
 			path = VocaloidBox;
 			sourceTree = "<group>";
@@ -321,6 +353,8 @@
 			files = (
 				CF08FFF8225B29110005BB0A /* LaunchScreen.storyboard in Resources */,
 				CF08FFF5225B29110005BB0A /* Assets.xcassets in Resources */,
+				CFB2071F22A5688D001A056D /* mantastorm.wav in Resources */,
+				CFB2071D22A566F8001A056D /* mantastorm.mp3 in Resources */,
 				CF08FFF3225B29100005BB0A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -441,17 +475,23 @@
 				CF1D3904229D30ED004672AA /* AlbumSortEnum.swift in Sources */,
 				CF080030225B98240005BB0A /* AlbumServiceAPI.swift in Sources */,
 				CF08FFF0225B29100005BB0A /* ViewController.swift in Sources */,
+				CFB2071322A52781001A056D /* ImportedMusicTableViewController.swift in Sources */,
 				CF08002E225B969D0005BB0A /* ReleaseDate.swift in Sources */,
+				CF1B935A22A503CD0071DB5C /* ImportedAlbumsViewController.swift in Sources */,
 				CF08002C225B95320005BB0A /* AlbumAPI.swift in Sources */,
 				CF080028225B91510005BB0A /* URLSession.swift in Sources */,
 				CF08002A225B93660005BB0A /* AlbumsResponse.swift in Sources */,
 				CF080024225B45C80005BB0A /* AlbumTableViewController.swift in Sources */,
+				CFB2071522A52824001A056D /* ImportedMusicTableViewCell.swift in Sources */,
 				CF08FFEE225B29100005BB0A /* AppDelegate.swift in Sources */,
 				CF08001C225B33090005BB0A /* Album.swift in Sources */,
 				CF08001E225B44210005BB0A /* Music.swift in Sources */,
 				CF080022225B459C0005BB0A /* AlbumTableViewCell.swift in Sources */,
+				CFB2071722A52862001A056D /* ImportedMusic.swift in Sources */,
 				CF6C3A5D229D7C2800C7B632 /* MusicServiceAPI.swift in Sources */,
 				CF27B61F2283029E00EF9B06 /* FavoriteAlbumTableViewController.swift in Sources */,
+				CF1B935C22A5043E0071DB5C /* ImportNewAlbumViewController.swift in Sources */,
+				CFB2071922A53ABE001A056D /* ImportedAlbum.swift in Sources */,
 				CF27B61D22817A4200EF9B06 /* MusicTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

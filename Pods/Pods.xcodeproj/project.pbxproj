@@ -19,6 +19,7 @@
 		B9E2957838D37BB11D45919F7944441C /* YoutubePlayer-in-WKWebView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D49E9BED68E74F64434A70E3697849A3 /* YoutubePlayer-in-WKWebView-dummy.m */; };
 		BE17F0686819BD7771524BCC93783A27 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
 		C1D16DD8A5BE14B631762FFFB0C8BB24 /* WKYTPlayerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 158814EAEF2AA7E7ACA32043557997DD /* WKYTPlayerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CFB2072322A56E23001A056D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFB2072222A56E23001A056D /* AVFoundation.framework */; };
 		F4B673490D518AE1DE5DD294DF0181EE /* Pods-VocaloidBoxUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C1AE9B98EF1FB99C9BAF78A41A248B5D /* Pods-VocaloidBoxUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F5DA2F3475674848AF9E0A12D6161CCF /* WKYTPlayerView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D45E0C906890686D770071E3F267394C /* WKYTPlayerView.bundle */; };
 		FFBA851D22B7CA2056623C11394778E3 /* Pods-VocaloidBoxTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 25214773084C7679EF93DB8D1511EAA3 /* Pods-VocaloidBoxTests-dummy.m */; };
@@ -53,7 +54,7 @@
 		0D71DA4EB4B89EE3636DB6815204F82C /* Pods-VocaloidBoxUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VocaloidBoxUITests.release.xcconfig"; sourceTree = "<group>"; };
 		14FF664D309A41BD2D3592DC24FBA395 /* Pods-VocaloidBoxTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VocaloidBoxTests.debug.xcconfig"; sourceTree = "<group>"; };
 		158814EAEF2AA7E7ACA32043557997DD /* WKYTPlayerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WKYTPlayerView.h; path = WKYTPlayerView/WKYTPlayerView.h; sourceTree = "<group>"; };
-		1CE131C12E370F777A09B876F6844462 /* YoutubePlayer_in_WKWebView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = YoutubePlayer_in_WKWebView.framework; path = "YoutubePlayer-in-WKWebView.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CE131C12E370F777A09B876F6844462 /* YoutubePlayer_in_WKWebView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YoutubePlayer_in_WKWebView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		25214773084C7679EF93DB8D1511EAA3 /* Pods-VocaloidBoxTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VocaloidBoxTests-dummy.m"; sourceTree = "<group>"; };
 		28DABE7CC3D147C3BB06E53877AD97BA /* Pods-VocaloidBoxTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VocaloidBoxTests-umbrella.h"; sourceTree = "<group>"; };
 		2F5F419171514729AD988136229447C0 /* Pods-VocaloidBox.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-VocaloidBox.modulemap"; sourceTree = "<group>"; };
@@ -67,15 +68,16 @@
 		4DB29255EF68CE8B71DC164DCA7E30AE /* YoutubePlayer-in-WKWebView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "YoutubePlayer-in-WKWebView-Info.plist"; sourceTree = "<group>"; };
 		5006C834897EBCCAD4B045B5DC93DA40 /* Pods-VocaloidBox-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VocaloidBox-acknowledgements.plist"; sourceTree = "<group>"; };
 		54049F26A08C7080EA16CE1F4C458AF8 /* Pods-VocaloidBox-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VocaloidBox-Info.plist"; sourceTree = "<group>"; };
-		832281469A1254714EF6FDD234861596 /* Pods_VocaloidBoxUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_VocaloidBoxUITests.framework; path = "Pods-VocaloidBoxUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		832281469A1254714EF6FDD234861596 /* Pods_VocaloidBoxUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VocaloidBoxUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8363383E203A0AFC6A8C09CAF3959723 /* Pods-VocaloidBoxUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VocaloidBoxUITests-dummy.m"; sourceTree = "<group>"; };
 		85CD670678F237FB76E164007DA156DC /* Pods-VocaloidBox-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VocaloidBox-frameworks.sh"; sourceTree = "<group>"; };
 		88C2C92BB7DDC17915FF28A029F18130 /* WKYTPlayerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WKYTPlayerView.m; path = WKYTPlayerView/WKYTPlayerView.m; sourceTree = "<group>"; };
 		9D58DC2428A71392DD27EF60F0F3B1A7 /* Pods-VocaloidBoxTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VocaloidBoxTests-Info.plist"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C1AE9B98EF1FB99C9BAF78A41A248B5D /* Pods-VocaloidBoxUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VocaloidBoxUITests-umbrella.h"; sourceTree = "<group>"; };
 		C8612A66B4316B7F5D32A053ED2FDDEC /* Pods-VocaloidBoxTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-VocaloidBoxTests.modulemap"; sourceTree = "<group>"; };
 		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CFB2072222A56E23001A056D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
 		D27669C2A685748E1866249AB1C61FBA /* YoutubePlayer-in-WKWebView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "YoutubePlayer-in-WKWebView.modulemap"; sourceTree = "<group>"; };
 		D36F9D6A75821B543626229EF43919F9 /* Pods-VocaloidBox-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VocaloidBox-acknowledgements.markdown"; sourceTree = "<group>"; };
 		D45E0C906890686D770071E3F267394C /* WKYTPlayerView.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = WKYTPlayerView.bundle; path = WKYTPlayerView/WKYTPlayerView.bundle; sourceTree = "<group>"; };
@@ -84,9 +86,9 @@
 		E4E8237401E47DD6198C1F4365FDE03B /* Pods-VocaloidBoxTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VocaloidBoxTests.release.xcconfig"; sourceTree = "<group>"; };
 		E604661C6288EE6D020FDCC78B44F578 /* Pods-VocaloidBox-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VocaloidBox-dummy.m"; sourceTree = "<group>"; };
 		E6AA4E4E6D2D4BF0331DB55BA567C344 /* Pods-VocaloidBoxTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VocaloidBoxTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		F2252DB73E661C92A9395ADF3187C34F /* Pods_VocaloidBoxTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_VocaloidBoxTests.framework; path = "Pods-VocaloidBoxTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2252DB73E661C92A9395ADF3187C34F /* Pods_VocaloidBoxTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VocaloidBoxTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2397A61B8B46C888C30EE9BC67CE184 /* Pods-VocaloidBoxUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VocaloidBoxUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		F726B953F3B252927B352C3355A2E4D5 /* Pods_VocaloidBox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_VocaloidBox.framework; path = "Pods-VocaloidBox.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F726B953F3B252927B352C3355A2E4D5 /* Pods_VocaloidBox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VocaloidBox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9D012FF14442EB25E039043CAA645C1 /* Pods-VocaloidBoxUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-VocaloidBoxUITests.modulemap"; sourceTree = "<group>"; };
 		FC66A701B0F85891EBABBE796563AEEE /* Pods-VocaloidBoxUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VocaloidBoxUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -112,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFB2072322A56E23001A056D /* AVFoundation.framework in Frameworks */,
 				3B867F08D2BA6E9AF65234A3D95B8EDE /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,7 +216,6 @@
 				A0C98DE340FB510B3FC001EC726AE66E /* Resources */,
 				D118E0FA99380F3C275DC39ADE11ABB6 /* Support Files */,
 			);
-			name = "YoutubePlayer-in-WKWebView";
 			path = "YoutubePlayer-in-WKWebView";
 			sourceTree = "<group>";
 		};
@@ -245,6 +247,7 @@
 		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CFB2072222A56E23001A056D /* AVFoundation.framework */,
 				9B055D0CFEA43187E72B03DED11F5662 /* iOS */,
 			);
 			name = Frameworks;
@@ -394,6 +397,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
